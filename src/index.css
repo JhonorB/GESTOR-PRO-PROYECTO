@@ -1,0 +1,90 @@
+
+:root {
+    --primary-color: #4a90e2; /* Azul medio */
+    --primary-dark-color: #357bd8; /* Azul más oscuro para hover */
+    --secondary-color: #6c757d; /* Gris estándar como secundario */
+    
+    --text-light: #e0e0e0; /* Texto claro (para uso en fondos oscuros) */
+    --text-dark: #343a40; /* Texto muy oscuro (casi negro) */
+    
+    --background-light: #f8f9fa; /* Fondo muy claro, casi blanco */
+    --background-dark: #121212; /* Fondo muy oscuro, casi negro */
+    
+    --card-light: #ffffff; /* Fondo de tarjeta blanco */
+    --card-dark: #1f2228; /* <--- Fondo de tarjeta más oscuro para modo oscuro */
+    
+    --border-light: #e9ecef; /* Borde muy claro */
+    --border-dark: #3a3f4a; /* <--- Borde más oscuro */
+    
+    --shadow-light: rgba(0, 0, 0, 0.08);
+    --shadow-dark: rgba(0, 0, 0, 0.5); 
+    
+    --gradient-light: linear-gradient(135deg, #4a90e2 0%, #357bd8 100%);
+    --gradient-dark: linear-gradient(135deg, #1f2228 0%, #121212 100%); /* Gradiente de grises muy oscuros */
+
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+
+    /* Variables que tus módulos usarán (por defecto, tema CLARO) */
+    --app-bg-color: var(--background-light); 
+    --text-color-primary: var(--text-dark);
+    --text-color-secondary: #6c757d;
+    --card-bg: var(--card-light);
+    --card-shadow: var(--shadow-light);
+    --border-color: var(--border-light);
+    --header-gradient: var(--gradient-light);
+    --primary-button-bg: var(--primary-color);
+    --secondary-button-bg: #e9ecef;
+    --secondary-button-text: var(--text-dark);
+    --input-bg: var(--card-light);
+    --input-border: var(--border-light);
+    --placeholder-color: #888;
+}
+
+/* --- Tema OSCURO --- */
+body[data-theme='dark'] {
+    --app-bg-color: var(--background-dark); 
+    --text-color-primary: #f0f0f0; 
+    --text-color-secondary: #b0b0b0; /* Gris más claro para texto secundario */
+    --card-bg: var(--card-dark); /* Fondo de tarjeta oscuro */
+    --card-shadow: var(--shadow-dark);
+    --border-color: var(--border-dark); /* Borde oscuro */
+    --header-gradient: var(--gradient-dark);
+    
+    --primary-color: #61dafb; /* Azul cian (brillante para acentos en oscuro) */
+    --primary-dark-color: #00bfff; /* Cian más oscuro para hover */
+
+    --primary-button-bg: var(--primary-color);
+    --secondary-button-bg: #444b55; /* Fondo de botón secundario oscuro */
+    --secondary-button-text: #f0f0f0; /* <--- Texto de botón secundario claro */
+    --input-bg: #2c3038; /* <--- Fondo de input más oscuro */
+    --input-border: #4a515e; /* Borde de input más oscuro */
+    --placeholder-color: #909090; /* Placeholder más claro en oscuro */
+}
+
+/* Resto de index.css */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--app-bg-color);
+    color: var(--text-color-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    line-height: 1.6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.card {
+    border: none;
+}
+
+.container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+}

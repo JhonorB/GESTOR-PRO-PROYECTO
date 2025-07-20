@@ -1,0 +1,231 @@
+/* src/home/HomePage.module.css */
+.container {
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #111827 0%, #1e293b 100%);
+  min-height: 100vh;
+}
+
+.welcomeTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: inline-block;
+  animation: titlePulse 3s infinite ease-in-out;
+}
+
+.userName {
+  color: #ff6b6b;
+  position: relative;
+}
+
+.userName::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #ff6b6b, transparent);
+  border-radius: 50%;
+  animation: underlinePulse 3s infinite ease-in-out;
+}
+
+.welcomeSubtitle {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.welcomeSubtitle::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #de3c3c, transparent);
+  border-radius: 50%;
+}
+
+.navCard {
+  background: linear-gradient(145deg, #1a1f27 0%, #171818 100%);
+  border: none;
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 
+              inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(222, 60, 60, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.navCard:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 
+              0 0 0 1px rgba(255, 255, 255, 0.1);
+  z-index: 2;
+}
+
+.navCard:hover::before {
+  opacity: 1;
+}
+
+.iconWrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease;
+}
+
+.iconWrapper::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(222, 60, 60, 0.1);
+  transform: scale(0.9);
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.navCard:hover .iconWrapper {
+  transform: translateY(-10px);
+}
+
+.navCard:hover .iconWrapper::before {
+  transform: scale(1.1);
+  background: rgba(222, 60, 60, 0.2);
+  box-shadow: 0 0 20px rgba(222, 60, 60, 0.3);
+}
+
+.icon {
+  color: #9ca3af;
+  transition: all 0.4s ease;
+}
+
+.navCard:hover .icon {
+  color: #ffffff;
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+}
+
+.cardTitle {
+  color: #e2e8f0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.cardDescription {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+/* Efecto de texto al pasar el mouse */
+.navCard:hover .cardTitle {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.navCard:hover .cardDescription {
+  color: #d1d5db;
+}
+
+/* Efecto de brillo al pasar el mouse */
+.navCard:hover::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  opacity: 0;
+  animation: shine 1.5s ease forwards;
+}
+
+/* Animaciones */
+@keyframes shine {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes titlePulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes underlinePulse {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  50% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 0%;
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .welcomeTitle {
+    font-size: 2rem;
+  }
+  
+  .welcomeSubtitle {
+    font-size: 1rem;
+  }
+}

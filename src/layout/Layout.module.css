@@ -1,0 +1,291 @@
+.topBar {
+  background: linear-gradient(135deg, #1a1f27 0%, #0d1117 100%);
+  color: white;
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  border-bottom: 1px solid rgba(222, 60, 60, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.topBar.scrolled {
+  padding: 0.5rem 2rem;
+  background: rgba(13, 17, 23, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.brandContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logoContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+}
+
+.logo {
+  color: #ff6b6b;
+  z-index: 2;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logoGlow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(222, 60, 60, 0.2);
+  box-shadow: 0 0 15px rgba(222, 60, 60, 0.3);
+  animation: logoPulse 3s infinite ease-in-out;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.logoContainer:hover .logoGlow {
+  background: rgba(222, 60, 60, 0.3);
+  box-shadow: 0 0 25px rgba(222, 60, 60, 0.5);
+  transform: scale(1.1);
+}
+
+.logoContainer:hover .logo {
+  color: #ffffff;
+  transform: rotate(15deg);
+}
+
+@keyframes logoPulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+
+.brandTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(90deg, #ff6b6b, #ffa8a8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.brandTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ff6b6b, transparent);
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.brandContainer:hover .brandTitle::after {
+  opacity: 1;
+  bottom: -3px;
+}
+
+.brandContainer:hover .brandTitle {
+  text-shadow: 0 0 10px rgba(255, 107, 107, 0.4);
+}
+
+.dateTimeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  max-width: 200px;
+}
+
+.time {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #e2e8f0;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  text-transform: capitalize;
+}
+
+.actionsContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 12px;
+  color: #9ca3af;
+  transition: color 0.3s ease;
+}
+
+.searchInput {
+  background: rgba(30, 35, 43, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: 0.6rem 1rem 0.6rem 40px;
+  color: white;
+  width: 220px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: rgba(222, 60, 60, 0.4);
+  box-shadow: 0 0 0 3px rgba(222, 60, 60, 0.1);
+  background: rgba(30, 35, 43, 0.9);
+  width: 260px;
+}
+
+.searchInput:focus + .searchIcon {
+  color: #ff6b6b;
+}
+
+.actionButton {
+  background: rgba(30, 35, 43, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.actionButton:hover {
+  background: rgba(222, 60, 60, 0.2);
+  color: white;
+  border-color: rgba(222, 60, 60, 0.3);
+  transform: translateY(-2px);
+}
+
+.notificationBadge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #ff6b6b;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(255, 107, 107, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 107, 107, 0);
+  }
+}
+
+.menuButton {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .dateTimeContainer {
+    display: none;
+  }
+  
+  .searchInput {
+    width: 180px;
+  }
+  
+  .searchInput:focus {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .searchContainer {
+    display: none;
+  }
+  
+  .actionsContainer {
+    gap: 0.5rem;
+  }
+  
+  .brandTitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .topBar {
+    padding: 0.8rem 1rem;
+  }
+  
+  .actionButton {
+    width: 36px;
+    height: 36px;
+  font-size: 0.9rem;
+  }
+  
+  .notificationButton,
+  .userButton {
+    display: none;
+  }
+  
+  .menuButton {
+    display: block;
+  }
+}

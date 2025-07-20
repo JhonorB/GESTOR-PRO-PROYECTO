@@ -1,0 +1,1399 @@
+{
+  "usuarios": [
+    {
+      "id": "U1",
+      "nombre_completo": "Ana Pérez",
+      "nombre_usuario": "ana.p",
+      "email": "ana.p@example.com",
+      "contrasena": "123",
+      "avatar_url": "user.jpg"
+    },
+    {
+      "id": "U2",
+      "nombre_completo": "Luis Gómez",
+      "nombre_usuario": "luis.g",
+      "email": "luis.g@example.com",
+      "contrasena": "123",
+      "avatar_url": "user.jpg"
+    },
+    {
+      "id": "U3",
+      "nombre_completo": "María López",
+      "nombre_usuario": "maria.l",
+      "email": "maria.l@example.com",
+      "contrasena": "123",
+      "avatar_url": "user.jpg"
+    },
+    {
+      "id": "U4",
+      "nombre_completo": "Carlos Díaz",
+      "nombre_usuario": "carlos.d",
+      "email": "carlos.d@example.com",
+      "contrasena": "123",
+      "avatar_url": "user.jpg"
+    },
+    {
+      "id": "U5",
+      "nombre_completo": "Sofía Ramirez",
+      "nombre_usuario": "sofia.r",
+      "email": "sofia.r@example.com",
+      "contrasena": "123",
+      "avatar_url": "user.jpg"
+    },
+    {
+      "id": "U6",
+      "nombre_completo": "Jhonor García",
+      "nombre_usuario": "Jhonor",
+      "email": "jhonor@example.com",
+      "contrasena": "123",
+      "avatar_url": "user.jpg"
+    },
+    {
+      "id": "U7",
+      "nombre_completo": "Andrea Castro",
+      "nombre_usuario": "andrea.c",
+      "email": "andrea.c@example.com",
+      "contrasena": "123",
+      "avatar_url": "user.jpg"
+    },
+    {
+      "id": "U8",
+      "nombre_completo": "Pedro Ruíz",
+      "nombre_usuario": "pedro.r",
+      "email": "pedro.r@example.com",
+      "contrasena": "123",
+      "avatar_url": "user.jpg"
+    },
+    {
+      "id": "U9",
+      "nombre_completo": "Laura Morales",
+      "nombre_usuario": "laura.m",
+      "email": "laura.m@example.com",
+      "contrasena": "123",
+      "avatar_url": "user.jpg"
+    },
+    {
+      "id": "U10",
+      "nombre_completo": "David Vargas",
+      "nombre_usuario": "david.v",
+      "email": "david.v@example.com",
+      "contrasena": "123",
+      "avatar_url": "user.jpg"
+    },
+    {
+      "id": "U11",
+      "nombre_completo": "GUS",
+      "nombre_usuario": "Lilpeep",
+      "email": "Lilpeep@gmail.com",
+      "contrasena": "1234",
+      "avatar_url": "user.jpg"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "C1",
+      "nombre": "Desarrollo"
+    },
+    {
+      "id": "C2",
+      "nombre": "Diseño"
+    },
+    {
+      "id": "C3",
+      "nombre": "Marketing"
+    },
+    {
+      "id": "C4",
+      "nombre": "Administración"
+    },
+    {
+      "id": "C5",
+      "nombre": "Recursos Humanos"
+    },
+    {
+      "id": "C6",
+      "nombre": "Finanzas"
+    }
+  ],
+  "proyectos": [
+    {
+      "id": "P1_U1",
+      "nombre": "Diseño de Interfaz",
+      "descripcion": "Creación de wireframes y prototipos para la nueva aplicación.",
+      "usuario_id": "U1",
+      "estado": "En Progreso",
+      "fecha_creacion": "2025-01-01T10:00:00Z",
+      "fecha_fin_estimada": "2025-12-31T23:59:59Z"
+    },
+    {
+      "id": "P2_U1",
+      "nombre": "Desarrollo Backend API",
+      "descripcion": "Implementación de los endpoints y lógica del servidor.",
+      "usuario_id": "U1",
+      "estado": "Planificado",
+      "fecha_creacion": "2025-02-01T10:00:00Z",
+      "fecha_fin_estimada": "2025-11-30T23:59:59Z"
+    },
+    {
+      "id": "P3_U1",
+      "nombre": "Campaña de Lanzamiento",
+      "descripcion": "Estrategia y ejecución de marketing para el producto.",
+      "usuario_id": "U1",
+      "estado": "Completado",
+      "fecha_creacion": "2025-03-01T10:00:00Z",
+      "fecha_fin_estimada": "2025-06-30T23:59:59Z"
+    },
+    {
+      "id": "P4_U1",
+      "nombre": "Auditoría de Seguridad",
+      "descripcion": "Revisión completa de la seguridad del sistema.",
+      "usuario_id": "U1",
+      "estado": "En Pausa",
+      "fecha_creacion": "2025-04-01T10:00:00Z",
+      "fecha_fin_estimada": "2026-01-31T23:59:59Z"
+    },
+    {
+      "id": "P5_U1",
+      "nombre": "Migración de Base de Datos",
+      "descripcion": "Mover datos antiguos a la nueva estructura.",
+      "usuario_id": "U1",
+      "estado": "En Progreso",
+      "fecha_creacion": "2025-05-01T10:00:00Z",
+      "fecha_fin_estimada": "2025-10-31T23:59:59Z"
+    },
+    {
+      "id": "P6_U1",
+      "nombre": "Mantenimiento Periódico",
+      "descripcion": "Tareas de optimización y limpieza del sistema.",
+      "usuario_id": "U1",
+      "estado": "Planificado",
+      "fecha_creacion": "2025-06-01T10:00:00Z",
+      "fecha_fin_estimada": "2026-02-28T23:59:59Z"
+    },
+    {
+      "id": "P1_U2",
+      "nombre": "Integración con CRM",
+      "descripcion": "Conectar el sistema con la plataforma de gestión de clientes.",
+      "usuario_id": "U2",
+      "estado": "En Progreso",
+      "fecha_creacion": "2025-01-05T10:00:00Z",
+      "fecha_fin_estimada": "2025-11-30T23:59:59Z"
+    },
+    {
+      "id": "P2_U2",
+      "nombre": "Desarrollo de Módulo de Reportes",
+      "descripcion": "Creación de nuevas funcionalidades de generación de informes.",
+      "usuario_id": "U2",
+      "estado": "Completado",
+      "fecha_creacion": "2025-02-05T10:00:00Z",
+      "fecha_fin_estimada": "2025-05-31T23:59:59Z"
+    },
+    {
+      "id": "P3_U2",
+      "nombre": "Actualización de Librerías",
+      "descripcion": "Actualizar todas las dependencias del proyecto a sus últimas versiones.",
+      "usuario_id": "U2",
+      "estado": "Planificado",
+      "fecha_creacion": "2025-03-05T10:00:00Z",
+      "fecha_fin_estimada": "2025-12-31T23:59:59Z"
+    },
+    {
+      "id": "P4_U2",
+      "nombre": "Diseño de Nuevo Logo",
+      "descripcion": "Creación de una nueva identidad visual para la marca.",
+      "usuario_id": "U2",
+      "estado": "En Pausa",
+      "fecha_creacion": "2025-04-05T10:00:00Z",
+      "fecha_fin_estimada": "2026-01-31T23:59:59Z"
+    },
+    {
+      "id": "P5_U2",
+      "nombre": "Investigación de IA",
+      "descripcion": "Explorar el uso de inteligencia artificial en nuevas características.",
+      "usuario_id": "U2",
+      "estado": "En Progreso",
+      "fecha_creacion": "2025-05-05T10:00:00Z",
+      "fecha_fin_estimada": "2025-10-31T23:59:59Z"
+    },
+    {
+      "id": "P6_U2",
+      "nombre": "Automatización de Pruebas",
+      "descripcion": "Implementar un framework para pruebas automatizadas.",
+      "usuario_id": "U2",
+      "estado": "Completado",
+      "fecha_creacion": "2025-06-05T10:00:00Z",
+      "fecha_fin_estimada": "2025-09-30T23:59:59Z"
+    },
+    {
+      "id": "P1_U3",
+      "nombre": "Rediseño de Página de Inicio",
+      "descripcion": "Modernizar la interfaz de usuario de la página principal.",
+      "usuario_id": "U3",
+      "estado": "Planificado",
+      "fecha_creacion": "2025-01-10T10:00:00Z",
+      "fecha_fin_estimada": "2026-03-31T23:59:59Z"
+    },
+    {
+      "id": "P2_U3",
+      "nombre": "Optimización SEO",
+      "descripcion": "Mejorar el posicionamiento en motores de búsqueda.",
+      "usuario_id": "U3",
+      "estado": "En Progreso",
+      "fecha_creacion": "2025-02-10T10:00:00Z",
+      "fecha_fin_estimada": "2025-11-30T23:59:59Z"
+    },
+    {
+      "id": "P3_U3",
+      "nombre": "Desarrollo de Chatbot",
+      "descripcion": "Integrar un asistente virtual para atención al cliente.",
+      "usuario_id": "U3",
+      "estado": "En Pausa",
+      "fecha_creacion": "2025-03-10T10:00:00Z",
+      "fecha_fin_estimada": "2026-01-31T23:59:59Z"
+    },
+    {
+      "id": "P4_U3",
+      "nombre": "Programa de Referidos",
+      "descripcion": "Crear un sistema de recompensas por referidos.",
+      "usuario_id": "U3",
+      "estado": "Completado",
+      "fecha_creacion": "2025-04-10T10:00:00Z",
+      "fecha_fin_estimada": "2025-07-31T23:59:59Z"
+    },
+    {
+      "id": "P5_U3",
+      "nombre": "Investigación de Mercado",
+      "descripcion": "Análisis de tendencias y necesidades de los usuarios.",
+      "usuario_id": "U3",
+      "estado": "En Progreso",
+      "fecha_creacion": "2025-05-10T10:00:00Z",
+      "fecha_fin_estimada": "2025-10-31T23:59:59Z"
+    },
+    {
+      "id": "P6_U3",
+      "nombre": "Actualización de Políticas",
+      "descripcion": "Revisión y actualización de términos y condiciones.",
+      "usuario_id": "U3",
+      "estado": "Planificado",
+      "fecha_creacion": "2025-06-10T10:00:00Z",
+      "fecha_fin_estimada": "2026-02-28T23:59:59Z"
+    },
+    {
+      "id": "P1_U4",
+      "nombre": "Optimización de Base de Datos",
+      "descripcion": "Mejorar el rendimiento y la eficiencia de las consultas.",
+      "usuario_id": "U4",
+      "estado": "En Progreso",
+      "fecha_creacion": "2025-01-15T10:00:00Z",
+      "fecha_fin_estimada": "2025-12-15T23:59:59Z"
+    },
+    {
+      "id": "P2_U4",
+      "nombre": "Desarrollo de Nuevas Funciones",
+      "descripcion": "Implementar tres nuevas características clave del producto.",
+      "usuario_id": "U4",
+      "estado": "Completado",
+      "fecha_creacion": "2025-02-15T10:00:00Z",
+      "fecha_fin_estimada": "2025-06-30T23:59:59Z"
+    },
+    {
+      "id": "P3_U4",
+      "nombre": "Pruebas de Carga",
+      "descripcion": "Realizar tests para asegurar el rendimiento bajo alta demanda.",
+      "usuario_id": "U4",
+      "estado": "Planificado",
+      "fecha_creacion": "2025-03-15T10:00:00Z",
+      "fecha_fin_estimada": "2026-01-31T23:59:59Z"
+    },
+    {
+      "id": "P4_U4",
+      "nombre": "Implementación de CI/CD",
+      "descripcion": "Configurar un pipeline de integración continua y despliegue continuo.",
+      "usuario_id": "U4",
+      "estado": "En Pausa",
+      "fecha_creacion": "2025-04-15T10:00:00Z",
+      "fecha_fin_estimada": "2026-02-28T23:59:59Z"
+    },
+    {
+      "id": "P5_U4",
+      "nombre": "Actualización de Frameworks",
+      "descripcion": "Migrar a versiones más recientes de los frameworks utilizados.",
+      "usuario_id": "U4",
+      "estado": "En Progreso",
+      "fecha_creacion": "2025-05-15T10:00:00Z",
+      "fecha_fin_estimada": "2025-11-30T23:59:59Z"
+    },
+    {
+      "id": "P6_U4",
+      "nombre": "Refactorización de Código",
+      "descripcion": "Mejorar la calidad y legibilidad del código base.",
+      "usuario_id": "U4",
+      "estado": "Completado",
+      "fecha_creacion": "2025-06-15T10:00:00Z",
+      "fecha_fin_estimada": "2025-09-30T23:59:59Z"
+    },
+    {
+      "id": "P1_U5",
+      "nombre": "Plan de Capacitación",
+      "descripcion": "Desarrollar material y cronogramas de formación para el equipo.",
+      "usuario_id": "U5",
+      "estado": "Planificado",
+      "fecha_creacion": "2025-01-20T10:00:00Z",
+      "fecha_fin_estimada": "2026-04-30T23:59:59Z"
+    },
+    {
+      "id": "P2_U5",
+      "nombre": "Evaluación de Desempeño",
+      "descripcion": "Implementar un nuevo sistema de evaluación de desempeño anual.",
+      "usuario_id": "U5",
+      "estado": "En Progreso",
+      "fecha_creacion": "2025-02-20T10:00:00Z",
+      "fecha_fin_estimada": "2025-12-31T23:59:59Z"
+    },
+    {
+      "id": "P3_U5",
+      "nombre": "Gestión de Reclutamiento",
+      "descripcion": "Optimizar el proceso de selección y contratación de personal.",
+      "usuario_id": "U5",
+      "estado": "En Pausa",
+      "fecha_creacion": "2025-03-20T10:00:00Z",
+      "fecha_fin_estimada": "2026-02-28T23:59:59Z"
+    },
+    {
+      "id": "P4_U5",
+      "nombre": "Programa de Bienestar",
+      "descripcion": "Crear iniciativas para mejorar el bienestar de los empleados.",
+      "usuario_id": "U5",
+      "estado": "Completado",
+      "fecha_creacion": "2025-04-20T10:00:00Z",
+      "fecha_fin_estimada": "2025-08-31T23:59:59Z"
+    },
+    {
+      "id": "P5_U5",
+      "nombre": "Desarrollo de Liderazgo",
+      "descripcion": "Diseñar talleres para fortalecer habilidades de liderazgo.",
+      "usuario_id": "U5",
+      "estado": "En Progreso",
+      "fecha_creacion": "2025-05-20T10:00:00Z",
+      "fecha_fin_estimada": "2025-10-31T23:59:59Z"
+    },
+    {
+      "id": "P6_U5",
+      "nombre": "Gestión de Compensaciones",
+      "descripcion": "Revisar y actualizar la estructura salarial y de beneficios.",
+      "usuario_id": "U5",
+      "estado": "Planificado",
+      "fecha_creacion": "2025-06-20T10:00:00Z",
+      "fecha_fin_estimada": "2026-03-31T23:59:59Z"
+    },
+    {
+      "id": "P1_U6",
+      "nombre": "Análisis de Inversiones",
+      "descripcion": "Evaluar oportunidades de inversión para la empresa.",
+      "usuario_id": "U6",
+      "estado": "En Progreso",
+      "fecha_creacion": "2025-01-25T10:00:00Z",
+      "fecha_fin_estimada": "2025-12-31T23:59:59Z"
+    },
+    {
+      "id": "P2_U6",
+      "nombre": "Presupuesto Anual 2026",
+      "descripcion": "Elaborar el presupuesto financiero para el próximo año fiscal.",
+      "usuario_id": "U6",
+      "estado": "Planificado",
+      "fecha_creacion": "2025-02-25T10:00:00Z",
+      "fecha_fin_estimada": "2025-11-30T23:59:59Z"
+    },
+    {
+      "id": "P3_U6",
+      "nombre": "Optimización de Flujo de Caja",
+      "descripcion": "Implementar estrategias para mejorar la liquidez de la empresa.",
+      "usuario_id": "U6",
+      "estado": "Completado",
+      "fecha_creacion": "2025-03-25T10:00:00Z",
+      "fecha_fin_estimada": "2025-06-30T23:59:59Z"
+    },
+    {
+      "id": "P4_U6",
+      "nombre": "Negociación con Proveedores",
+      "descripcion": "Revisar contratos y buscar mejores condiciones con proveedores clave.",
+      "usuario_id": "U6",
+      "estado": "En Pausa",
+      "fecha_creacion": "2025-04-25T10:00:00Z",
+      "fecha_fin_estimada": "2026-01-31T23:59:59Z"
+    },
+    {
+      "id": "P5_U6",
+      "nombre": "Reportes Financieros Mensuales",
+      "descripcion": "Preparar y presentar los informes financieros del mes.",
+      "usuario_id": "U6",
+      "estado": "En Progreso",
+      "fecha_creacion": "2025-05-25T10:00:00Z",
+      "fecha_fin_estimada": "2025-10-31T23:59:59Z"
+    },
+    {
+      "id": "P6_U6",
+      "nombre": "Gestión de Activos Fijos",
+      "descripcion": "Inventario y valoración de los activos de la empresa.",
+      "usuario_id": "U6",
+      "estado": "Planificado",
+      "fecha_creacion": "2025-06-25T10:00:00Z",
+      "fecha_fin_estimada": "2026-02-28T23:59:59Z"
+    },
+    {
+      "id": "P1_U7",
+      "nombre": "Análisis de Datos Big Data",
+      "descripcion": "Procesar y extraer insights de grandes volúmenes de datos.",
+      "usuario_id": "U7",
+      "estado": "En Progreso",
+      "fecha_creacion": "2025-01-02T10:00:00Z",
+      "fecha_fin_estimada": "2025-12-25T23:59:59Z"
+    },
+    {
+      "id": "P2_U7",
+      "nombre": "Desarrollo de Modelos Predictivos",
+      "descripcion": "Crear algoritmos para prever tendencias de mercado.",
+      "usuario_id": "U7",
+      "estado": "Planificado",
+      "fecha_creacion": "2025-02-02T10:00:00Z",
+      "fecha_fin_estimada": "2025-11-20T23:59:59Z"
+    },
+    {
+      "id": "P3_U7",
+      "nombre": "Visualización de Datos",
+      "descripcion": "Diseñar dashboards interactivos para la presentación de resultados.",
+      "usuario_id": "U7",
+      "estado": "Completado",
+      "fecha_creacion": "2025-03-02T10:00:00Z",
+      "fecha_fin_estimada": "2025-06-15T23:59:59Z"
+    },
+    {
+      "id": "P4_U7",
+      "nombre": "Integración de Fuentes de Datos",
+      "descripcion": "Conectar con nuevas APIs para obtener información relevante.",
+      "usuario_id": "U7",
+      "estado": "En Pausa",
+      "fecha_creacion": "2025-04-02T10:00:00Z",
+      "fecha_fin_estimada": "2026-01-10T23:59:59Z"
+    },
+    {
+      "id": "P5_U7",
+      "nombre": "Machine Learning para Optimización",
+      "descripcion": "Aplicar ML para mejorar procesos internos.",
+      "usuario_id": "U7",
+      "estado": "En Progreso",
+      "fecha_creacion": "2025-05-02T10:00:00Z",
+      "fecha_fin_estimada": "2025-10-05T23:59:59Z"
+    },
+    {
+      "id": "P6_U7",
+      "nombre": "Creación de Data Warehouse",
+      "descripcion": "Diseñar y construir un almacén de datos centralizado.",
+      "usuario_id": "U7",
+      "estado": "Planificado",
+      "fecha_creacion": "2025-06-02T10:00:00Z",
+      "fecha_fin_estimada": "2026-02-14T23:59:59Z"
+    },
+    {
+      "id": "P1_U8",
+      "nombre": "Gestión de Proyectos Ágiles",
+      "descripcion": "Implementar metodologías ágiles en los equipos de desarrollo.",
+      "usuario_id": "U8",
+      "estado": "En Progreso",
+      "fecha_creacion": "2025-01-07T10:00:00Z",
+      "fecha_fin_estimada": "2025-12-20T23:59:59Z"
+    },
+    {
+      "id": "P2_U8",
+      "nombre": "Coordinación Interdepartamental",
+      "descripcion": "Mejorar la comunicación y colaboración entre equipos.",
+      "usuario_id": "U8",
+      "estado": "Completado",
+      "fecha_creacion": "2025-02-07T10:00:00Z",
+      "fecha_fin_estimada": "2025-05-25T23:59:59Z"
+    },
+    {
+      "id": "P3_U8",
+      "nombre": "Optimización de Flujos de Trabajo",
+      "descripcion": "Identificar cuellos de botella y proponer mejoras en los procesos.",
+      "usuario_id": "U8",
+      "estado": "Planificado",
+      "fecha_creacion": "2025-03-07T10:00:00Z",
+      "fecha_fin_estimada": "2026-01-05T23:59:59Z"
+    },
+    {
+      "id": "P4_U8",
+      "nombre": "Gestión de Riesgos del Proyecto",
+      "descripcion": "Identificar, evaluar y mitigar riesgos potenciales.",
+      "usuario_id": "U8",
+      "estado": "En Pausa",
+      "fecha_creacion": "2025-04-07T10:00:00Z",
+      "fecha_fin_estimada": "2026-02-01T23:59:59Z"
+    },
+    {
+      "id": "P5_U8",
+      "nombre": "Planificación Estratégica Anual",
+      "descripcion": "Desarrollar los objetivos y estrategias a largo plazo de la empresa.",
+      "usuario_id": "U8",
+      "estado": "En Progreso",
+      "fecha_creacion": "2025-05-07T10:00:00Z",
+      "fecha_fin_estimada": "2025-11-15T23:59:59Z"
+    },
+    {
+      "id": "P6_U8",
+      "nombre": "Desarrollo de KPIs",
+      "descripcion": "Definir e implementar indicadores clave de rendimiento.",
+      "usuario_id": "U8",
+      "estado": "Completado",
+      "fecha_creacion": "2025-06-07T10:00:00Z",
+      "fecha_fin_estimada": "2025-09-20T23:59:59Z"
+    },
+    {
+      "id": "P1_U9",
+      "nombre": "Desarrollo de Marca Personal",
+      "descripcion": "Crear y posicionar la imagen personal profesional.",
+      "usuario_id": "U9",
+      "estado": "Planificado",
+      "fecha_creacion": "2025-01-12T10:00:00Z",
+      "fecha_fin_estimada": "2026-03-10T23:59:59Z"
+    },
+    {
+      "id": "P2_U9",
+      "nombre": "Creación de Contenido Digital",
+      "descripcion": "Producir artículos, videos y posts para plataformas online.",
+      "usuario_id": "U9",
+      "estado": "En Progreso",
+      "fecha_creacion": "2025-02-12T10:00:00Z",
+      "fecha_fin_estimada": "2025-12-05T23:59:59Z"
+    },
+    {
+      "id": "P3_U9",
+      "nombre": "Gestión de Redes Sociales",
+      "descripcion": "Administrar y optimizar perfiles en plataformas sociales.",
+      "usuario_id": "U9",
+      "estado": "En Pausa",
+      "fecha_creacion": "2025-03-12T10:00:00Z",
+      "fecha_fin_estimada": "2026-01-20T23:59:59Z"
+    },
+    {
+      "id": "P4_U9",
+      "nombre": "Análisis de Datos para Contenido",
+      "descripcion": "Estudiar el rendimiento del contenido y la audiencia.",
+      "usuario_id": "U9",
+      "estado": "Completado",
+      "fecha_creacion": "2025-04-12T10:00:00Z",
+      "fecha_fin_estimada": "2025-07-25T23:59:59Z"
+    },
+    {
+      "id": "P5_U9",
+      "nombre": "Estrategia de Email Marketing",
+      "descripcion": "Diseñar y ejecutar campañas de correo electrónico.",
+      "usuario_id": "U9",
+      "estado": "En Progreso",
+      "fecha_creacion": "2025-05-12T10:00:00Z",
+      "fecha_fin_estimada": "2025-10-10T23:59:59Z"
+    },
+    {
+      "id": "P6_U9",
+      "nombre": "Colaboraciones con Influencers",
+      "descripcion": "Identificar y contactar a influencers para campañas.",
+      "usuario_id": "U9",
+      "estado": "Planificado",
+      "fecha_creacion": "2025-06-12T10:00:00Z",
+      "fecha_fin_estimada": "2026-02-18T23:59:59Z"
+    },
+    {
+      "id": "P1_U10",
+      "nombre": "Desarrollo de Plataforma E-learning",
+      "descripcion": "Creación de un sistema para cursos en línea.",
+      "usuario_id": "U10",
+      "estado": "En Progreso",
+      "fecha_creacion": "2025-01-17T10:00:00Z",
+      "fecha_fin_estimada": "2025-12-10T23:59:59Z"
+    },
+    {
+      "id": "P2_U10",
+      "nombre": "Implementación de Sistema CRM",
+      "descripcion": "Configurar y adaptar un CRM para la gestión de clientes.",
+      "usuario_id": "U10",
+      "estado": "Completado",
+      "fecha_creacion": "2025-02-17T10:00:00Z",
+      "fecha_fin_estimada": "2025-06-20T23:59:59Z"
+    },
+    {
+      "id": "P3_U10",
+      "nombre": "Análisis de Datos Financieros",
+      "descripcion": "Estudio de información financiera para toma de decisiones.",
+      "usuario_id": "U10",
+      "estado": "Planificado",
+      "fecha_creacion": "2025-03-17T10:00:00Z",
+      "fecha_fin_estimada": "2026-01-25T23:59:59Z"
+    },
+    {
+      "id": "P4_U10",
+      "nombre": "Gestión de Calidad ISO 9001",
+      "descripcion": "Implementar y certificar el sistema de gestión de calidad.",
+      "usuario_id": "U10",
+      "estado": "En Pausa",
+      "fecha_creacion": "2025-04-17T10:00:00Z",
+      "fecha_fin_estimada": "2026-02-10T23:59:59Z"
+    },
+    {
+      "id": "P5_U10",
+      "nombre": "Desarrollo de Herramientas Internas",
+      "descripcion": "Crear utilidades para automatizar tareas administrativas.",
+      "usuario_id": "U10",
+      "estado": "En Progreso",
+      "fecha_creacion": "2025-05-17T10:00:00Z",
+      "fecha_fin_estimada": "2025-11-01T23:59:59Z"
+    },
+    {
+      "id": "P6_U10",
+      "nombre": "Optimización de Procesos de Negocio",
+      "descripcion": "Reingeniería de los flujos de trabajo de la empresa.",
+      "usuario_id": "U10",
+      "estado": "Planificado",
+      "fecha_creacion": "2025-06-17T10:00:00Z",
+      "fecha_fin_estimada": "2026-03-05T23:59:59Z"
+    },
+    {
+      "id": "f7a8",
+      "nombre": "ds",
+      "descripcion": "dsd",
+      "usuario_id": "U11",
+      "estado": "Completado",
+      "fecha_creacion": "2025-07-20",
+      "fecha_fin_estimada": "12121-02-12"
+    }
+  ],
+  "tareas": [
+    {
+      "id": "T2_U1",
+      "titulo": "Implementar Login",
+      "descripcion": "Codificación del módulo de autenticación.",
+      "prioridad": "Media",
+      "completada": false,
+      "categoria_id": "C1",
+      "proyecto_id": "P1_U1",
+      "usuario_id": "U1",
+      "fecha_creacion": "2025-07-11T10:00:00Z",
+      "fecha_vencimiento": "2025-07-28T17:00:00Z"
+    },
+    {
+      "id": "T3_U1",
+      "titulo": "Revisar Seguridad",
+      "descripcion": "Análisis de vulnerabilidades del sistema.",
+      "prioridad": "Alta",
+      "completada": false,
+      "categoria_id": "C1",
+      "proyecto_id": "P1_U1",
+      "usuario_id": "U1",
+      "fecha_creacion": "2025-07-12T11:00:00Z",
+      "fecha_vencimiento": "2025-07-30T17:00:00Z"
+    },
+    {
+      "id": "T4_U1",
+      "titulo": "Crear Componentes UI",
+      "descripcion": "Desarrollo de botones y formularios.",
+      "prioridad": "Baja",
+      "completada": false,
+      "categoria_id": "C2",
+      "proyecto_id": "P2_U1",
+      "usuario_id": "U1",
+      "fecha_creacion": "2025-07-13T12:00:00Z",
+      "fecha_vencimiento": "2025-08-05T17:00:00Z"
+    },
+    {
+      "id": "T5_U1",
+      "titulo": "Test de Integración",
+      "descripcion": "Pruebas de conexión entre módulos.",
+      "prioridad": "Media",
+      "completada": true,
+      "categoria_id": "C1",
+      "proyecto_id": "P2_U1",
+      "usuario_id": "U1",
+      "fecha_creacion": "2025-07-14T13:00:00Z",
+      "fecha_vencimiento": "2025-07-20T17:00:00Z"
+    },
+    {
+      "id": "T1_U2",
+      "titulo": "Plan de Marketing Q4",
+      "descripcion": "Estrategias para el cuarto trimestre.",
+      "prioridad": "Alta",
+      "completada": false,
+      "categoria_id": "C3",
+      "proyecto_id": "P1_U2",
+      "usuario_id": "U2",
+      "fecha_creacion": "2025-07-09T09:00:00Z",
+      "fecha_vencimiento": "2025-07-26T17:00:00Z"
+    },
+    {
+      "id": "T2_U2",
+      "titulo": "Análisis de Competencia",
+      "descripcion": "Estudio de mercado de los principales competidores.",
+      "prioridad": "Media",
+      "completada": false,
+      "categoria_id": "C3",
+      "proyecto_id": "P1_U2",
+      "usuario_id": "U2",
+      "fecha_creacion": "2025-07-10T10:00:00Z",
+      "fecha_vencimiento": "2025-07-29T17:00:00Z"
+    },
+    {
+      "id": "T3_U2",
+      "titulo": "Campañas de Email",
+      "descripcion": "Creación y programación de series de emails.",
+      "prioridad": "Baja",
+      "completada": false,
+      "categoria_id": "C3",
+      "proyecto_id": "P2_U2",
+      "usuario_id": "U2",
+      "fecha_creacion": "2025-07-11T11:00:00Z",
+      "fecha_vencimiento": "2025-08-01T17:00:00Z"
+    },
+    {
+      "id": "T4_U2",
+      "titulo": "Reporte de Ventas",
+      "descripcion": "Elaboración de informe mensual de ventas.",
+      "prioridad": "Alta",
+      "completada": false,
+      "categoria_id": "C6",
+      "proyecto_id": "P2_U2",
+      "usuario_id": "U2",
+      "fecha_creacion": "2025-07-12T12:00:00Z",
+      "fecha_vencimiento": "2025-07-27T17:00:00Z"
+    },
+    {
+      "id": "T5_U2",
+      "titulo": "Optimizar Landing Page",
+      "descripcion": "Mejorar tasas de conversión de la página de aterrizaje.",
+      "prioridad": "Media",
+      "completada": true,
+      "categoria_id": "C3",
+      "proyecto_id": "P1_U2",
+      "usuario_id": "U2",
+      "fecha_creacion": "2025-07-13T13:00:00Z",
+      "fecha_vencimiento": "2025-07-20T17:00:00Z"
+    },
+    {
+      "id": "T1_U3",
+      "titulo": "Reunión de Equipo",
+      "descripcion": "Preparar agenda para la reunión semanal.",
+      "prioridad": "Baja",
+      "completada": false,
+      "categoria_id": "C4",
+      "proyecto_id": "P1_U3",
+      "usuario_id": "U3",
+      "fecha_creacion": "2025-07-14T09:00:00Z",
+      "fecha_vencimiento": "2025-07-26T17:00:00Z"
+    },
+    {
+      "id": "T2_U3",
+      "titulo": "Contratar Desarrollador",
+      "descripcion": "Entrevistas para nuevo miembro del equipo.",
+      "prioridad": "Alta",
+      "completada": false,
+      "categoria_id": "C5",
+      "proyecto_id": "P1_U3",
+      "usuario_id": "U3",
+      "fecha_creacion": "2025-07-15T10:00:00Z",
+      "fecha_vencimiento": "2025-07-28T17:00:00Z"
+    },
+    {
+      "id": "T3_U3",
+      "titulo": "Organizar Archivos",
+      "descripcion": "Limpieza de documentos en la nube.",
+      "prioridad": "Media",
+      "completada": false,
+      "categoria_id": "C4",
+      "proyecto_id": "P2_U3",
+      "usuario_id": "U3",
+      "fecha_creacion": "2025-07-16T11:00:00Z",
+      "fecha_vencimiento": "2025-08-01T17:00:00Z"
+    },
+    {
+      "id": "T4_U3",
+      "titulo": "Facturas Pendientes",
+      "descripcion": "Procesar pagos a proveedores.",
+      "prioridad": "Alta",
+      "completada": false,
+      "categoria_id": "C6",
+      "proyecto_id": "P2_U3",
+      "usuario_id": "U3",
+      "fecha_creacion": "2025-07-17T12:00:00Z",
+      "fecha_vencimiento": "2025-07-27T17:00:00Z"
+    },
+    {
+      "id": "T5_U3",
+      "titulo": "Actualizar Software",
+      "descripcion": "Instalar últimas versiones de programas.",
+      "prioridad": "Baja",
+      "completada": true,
+      "categoria_id": "C4",
+      "proyecto_id": "P1_U3",
+      "usuario_id": "U3",
+      "fecha_creacion": "2025-07-18T13:00:00Z",
+      "fecha_vencimiento": "2025-07-20T17:00:00Z"
+    },
+    {
+      "id": "T1_U4",
+      "titulo": "Diseño UX App Móvil",
+      "descripcion": "Crear wireframes y prototipos para la app.",
+      "prioridad": "Alta",
+      "completada": false,
+      "categoria_id": "C2",
+      "proyecto_id": "P1_U4",
+      "usuario_id": "U4",
+      "fecha_creacion": "2025-07-19T09:00:00Z",
+      "fecha_vencimiento": "2025-07-28T17:00:00Z"
+    },
+    {
+      "id": "T2_U4",
+      "titulo": "Investigación de Usuarios",
+      "descripcion": "Realizar encuestas y entrevistas a usuarios.",
+      "prioridad": "Media",
+      "completada": false,
+      "categoria_id": "C2",
+      "proyecto_id": "P1_U4",
+      "usuario_id": "U4",
+      "fecha_creacion": "2025-07-20T10:00:00Z",
+      "fecha_vencimiento": "2025-07-31T17:00:00Z"
+    },
+    {
+      "id": "T3_U4",
+      "titulo": "Preparar Presentación",
+      "descripcion": "Diseñar slides para la reunión con stakeholders.",
+      "prioridad": "Baja",
+      "completada": false,
+      "categoria_id": "C3",
+      "proyecto_id": "P2_U4",
+      "usuario_id": "U4",
+      "fecha_creacion": "2025-07-21T11:00:00Z",
+      "fecha_vencimiento": "2025-08-05T17:00:00Z"
+    },
+    {
+      "id": "T4_U4",
+      "titulo": "Revisión de Diseño",
+      "descripcion": "Obtener feedback del equipo de desarrollo.",
+      "prioridad": "Alta",
+      "completada": false,
+      "categoria_id": "C2",
+      "proyecto_id": "P2_U4",
+      "usuario_id": "U4",
+      "fecha_creacion": "2025-07-22T12:00:00Z",
+      "fecha_vencimiento": "2025-07-29T17:00:00Z"
+    },
+    {
+      "id": "T5_U4",
+      "titulo": "Optimización de Imágenes",
+      "descripcion": "Reducir tamaño de archivos gráficos.",
+      "prioridad": "Media",
+      "completada": true,
+      "categoria_id": "C2",
+      "proyecto_id": "P1_U4",
+      "usuario_id": "U4",
+      "fecha_creacion": "2025-07-23T13:00:00Z",
+      "fecha_vencimiento": "2025-07-25T17:00:00Z"
+    },
+    {
+      "id": "T1_U5",
+      "titulo": "Análisis Financiero",
+      "descripcion": "Preparar reportes de gastos e ingresos.",
+      "prioridad": "Alta",
+      "completada": false,
+      "categoria_id": "C6",
+      "proyecto_id": "P1_U5",
+      "usuario_id": "U5",
+      "fecha_creacion": "2025-07-01T09:00:00Z",
+      "fecha_vencimiento": "2025-07-25T17:00:00Z"
+    },
+    {
+      "id": "T2_U5",
+      "titulo": "Presupuesto Anual",
+      "descripcion": "Elaborar propuesta de presupuesto para el próximo año.",
+      "prioridad": "Media",
+      "completada": false,
+      "categoria_id": "C6",
+      "proyecto_id": "P1_U5",
+      "usuario_id": "U5",
+      "fecha_creacion": "2025-07-02T10:00:00Z",
+      "fecha_vencimiento": "2025-07-28T17:00:00Z"
+    },
+    {
+      "id": "T3_U5",
+      "titulo": "Revisión de Contratos",
+      "descripcion": "Verificar términos y condiciones de nuevos acuerdos.",
+      "prioridad": "Baja",
+      "completada": false,
+      "categoria_id": "C4",
+      "proyecto_id": "P2_U5",
+      "usuario_id": "U5",
+      "fecha_creacion": "2025-07-03T11:00:00Z",
+      "fecha_vencimiento": "2025-08-01T17:00:00Z"
+    },
+    {
+      "id": "T4_U5",
+      "titulo": "Auditoría Interna",
+      "descripcion": "Preparar documentos para la auditoría financiera.",
+      "prioridad": "Alta",
+      "completada": false,
+      "categoria_id": "C6",
+      "proyecto_id": "P2_U5",
+      "usuario_id": "U5",
+      "fecha_creacion": "2025-07-04T12:00:00Z",
+      "fecha_vencimiento": "2025-07-27T17:00:00Z"
+    },
+    {
+      "id": "T5_U5",
+      "titulo": "Gestión de Cobranzas",
+      "descripcion": "Seguimiento de pagos pendientes de clientes.",
+      "prioridad": "Media",
+      "completada": true,
+      "categoria_id": "C6",
+      "proyecto_id": "P1_U5",
+      "usuario_id": "U5",
+      "fecha_creacion": "2025-07-05T13:00:00Z",
+      "fecha_vencimiento": "2025-07-20T17:00:00Z"
+    },
+    {
+      "id": "T1_U6",
+      "titulo": "Actualizar Política RRHH",
+      "descripcion": "Revisar y modificar políticas de recursos humanos.",
+      "prioridad": "Alta",
+      "completada": false,
+      "categoria_id": "C5",
+      "proyecto_id": "P1_U6",
+      "usuario_id": "U6",
+      "fecha_creacion": "2025-07-06T09:00:00Z",
+      "fecha_vencimiento": "2025-07-26T17:00:00Z"
+    },
+    {
+      "id": "T2_U6",
+      "titulo": "Entrevistas de Personal",
+      "descripcion": "Realizar entrevistas para nuevas vacantes.",
+      "prioridad": "Media",
+      "completada": false,
+      "categoria_id": "C5",
+      "proyecto_id": "P1_U6",
+      "usuario_id": "U6",
+      "fecha_creacion": "2025-07-07T10:00:00Z",
+      "fecha_vencimiento": "2025-07-29T17:00:00Z"
+    },
+    {
+      "id": "T3_U6",
+      "titulo": "Gestión de Beneficios",
+      "descripcion": "Administrar planes de beneficios para empleados.",
+      "prioridad": "Baja",
+      "completada": false,
+      "categoria_id": "C5",
+      "proyecto_id": "P2_U6",
+      "usuario_id": "U6",
+      "fecha_creacion": "2025-07-08T11:00:00Z",
+      "fecha_vencimiento": "2025-08-01T17:00:00Z"
+    },
+    {
+      "id": "T4_U6",
+      "titulo": "Capacitación de Nuevos Empleados",
+      "descripcion": "Preparar material y sesiones de inducción.",
+      "prioridad": "Alta",
+      "completada": false,
+      "categoria_id": "C5",
+      "proyecto_id": "P2_U6",
+      "usuario_id": "U6",
+      "fecha_creacion": "2025-07-09T12:00:00Z",
+      "fecha_vencimiento": "2025-07-27T17:00:00Z"
+    },
+    {
+      "id": "T5_U6",
+      "titulo": "Clima Laboral",
+      "descripcion": "Realizar encuestas de satisfacción del personal.",
+      "prioridad": "Media",
+      "completada": true,
+      "categoria_id": "C5",
+      "proyecto_id": "P1_U6",
+      "usuario_id": "U6",
+      "fecha_creacion": "2025-07-10T13:00:00Z",
+      "fecha_vencimiento": "2025-07-20T17:00:00Z"
+    },
+    {
+      "id": "T1_U7",
+      "titulo": "Diseño de Base de Datos",
+      "descripcion": "Creación de esquemas y relaciones de tablas.",
+      "prioridad": "Alta",
+      "completada": false,
+      "categoria_id": "C1",
+      "proyecto_id": "P1_U7",
+      "usuario_id": "U7",
+      "fecha_creacion": "2025-07-11T09:00:00Z",
+      "fecha_vencimiento": "2025-07-29T17:00:00Z"
+    },
+    {
+      "id": "T2_U7",
+      "titulo": "Integración de APIs Externas",
+      "descripcion": "Conectar el sistema con servicios de terceros.",
+      "prioridad": "Media",
+      "completada": false,
+      "categoria_id": "C1",
+      "proyecto_id": "P1_U7",
+      "usuario_id": "U7",
+      "fecha_creacion": "2025-07-12T10:00:00Z",
+      "fecha_vencimiento": "2025-07-31T17:00:00Z"
+    },
+    {
+      "id": "T3_U7",
+      "titulo": "Despliegue a Producción",
+      "descripcion": "Configurar servidores y migrar la aplicación.",
+      "prioridad": "Baja",
+      "completada": false,
+      "categoria_id": "C1",
+      "proyecto_id": "P2_U7",
+      "usuario_id": "U7",
+      "fecha_creacion": "2025-07-13T11:00:00Z",
+      "fecha_vencimiento": "2025-08-08T17:00:00Z"
+    },
+    {
+      "id": "T4_U7",
+      "titulo": "Monitoreo de Errores",
+      "descripcion": "Implementar herramientas de registro y alerta de errores.",
+      "prioridad": "Alta",
+      "completada": false,
+      "categoria_id": "C1",
+      "proyecto_id": "P2_U7",
+      "usuario_id": "U7",
+      "fecha_creacion": "2025-07-14T12:00:00Z",
+      "fecha_vencimiento": "2025-07-30T17:00:00Z"
+    },
+    {
+      "id": "T5_U7",
+      "titulo": "Documentación Técnica",
+      "descripcion": "Elaborar manuales y diagramas de arquitectura.",
+      "prioridad": "Media",
+      "completada": true,
+      "categoria_id": "C1",
+      "proyecto_id": "P1_U7",
+      "usuario_id": "U7",
+      "fecha_creacion": "2025-07-15T13:00:00Z",
+      "fecha_vencimiento": "2025-07-22T17:00:00Z"
+    },
+    {
+      "id": "T1_U8",
+      "titulo": "Campaña Publicitaria",
+      "descripcion": "Crear anuncios para redes sociales.",
+      "prioridad": "Alta",
+      "completada": false,
+      "categoria_id": "C3",
+      "proyecto_id": "P1_U8",
+      "usuario_id": "U8",
+      "fecha_creacion": "2025-07-01T09:00:00Z",
+      "fecha_vencimiento": "2025-07-25T17:00:00Z"
+    },
+    {
+      "id": "T2_U8",
+      "titulo": "SEO On-Page",
+      "descripcion": "Optimizar contenido para motores de búsqueda.",
+      "prioridad": "Media",
+      "completada": false,
+      "categoria_id": "C3",
+      "proyecto_id": "P1_U8",
+      "usuario_id": "U8",
+      "fecha_creacion": "2025-07-02T10:00:00Z",
+      "fecha_vencimiento": "2025-07-28T17:00:00Z"
+    },
+    {
+      "id": "T3_U8",
+      "titulo": "Creación de Contenido",
+      "descripcion": "Redactar artículos para el blog.",
+      "prioridad": "Baja",
+      "completada": false,
+      "categoria_id": "C3",
+      "proyecto_id": "P2_U8",
+      "usuario_id": "U8",
+      "fecha_creacion": "2025-07-03T11:00:00Z",
+      "fecha_vencimiento": "2025-08-01T17:00:00Z"
+    },
+    {
+      "id": "T4_U8",
+      "titulo": "Análisis de Datos Web",
+      "descripcion": "Interpretar métricas de Google Analytics.",
+      "prioridad": "Alta",
+      "completada": false,
+      "categoria_id": "C3",
+      "proyecto_id": "P2_U8",
+      "usuario_id": "U8",
+      "fecha_creacion": "2025-07-04T12:00:00Z",
+      "fecha_vencimiento": "2025-07-27T17:00:00Z"
+    },
+    {
+      "id": "T5_U8",
+      "titulo": "Email Marketing",
+      "descripcion": "Diseñar newsletters y secuencias de autoresponder.",
+      "prioridad": "Media",
+      "completada": true,
+      "categoria_id": "C3",
+      "proyecto_id": "P1_U8",
+      "usuario_id": "U8",
+      "fecha_creacion": "2025-07-05T13:00:00Z",
+      "fecha_vencimiento": "2025-07-20T17:00:00Z"
+    },
+    {
+      "id": "T1_U9",
+      "titulo": "Planificación de Eventos",
+      "descripcion": "Organizar webinar para lanzamiento de producto.",
+      "prioridad": "Alta",
+      "completada": false,
+      "categoria_id": "C4",
+      "proyecto_id": "P1_U9",
+      "usuario_id": "U9",
+      "fecha_creacion": "2025-07-06T09:00:00Z",
+      "fecha_vencimiento": "2025-07-26T17:00:00Z"
+    },
+    {
+      "id": "T2_U9",
+      "titulo": "Gestión de Contratos",
+      "descripcion": "Revisar y archivar acuerdos con clientes.",
+      "prioridad": "Media",
+      "completada": false,
+      "categoria_id": "C4",
+      "proyecto_id": "P1_U9",
+      "usuario_id": "U9",
+      "fecha_creacion": "2025-07-07T10:00:00Z",
+      "fecha_vencimiento": "2025-07-29T17:00:00Z"
+    },
+    {
+      "id": "T3_U9",
+      "titulo": "Compra de Materiales",
+      "descripcion": "Adquirir suministros de oficina.",
+      "prioridad": "Baja",
+      "completada": false,
+      "categoria_id": "C4",
+      "proyecto_id": "P2_U9",
+      "usuario_id": "U9",
+      "fecha_creacion": "2025-07-08T11:00:00Z",
+      "fecha_vencimiento": "2025-08-01T17:00:00Z"
+    },
+    {
+      "id": "T4_U9",
+      "titulo": "Coordinar Viajes",
+      "descripcion": "Reservar vuelos y hoteles para el equipo.",
+      "prioridad": "Alta",
+      "completada": false,
+      "categoria_id": "C4",
+      "proyecto_id": "P2_U9",
+      "usuario_id": "U9",
+      "fecha_creacion": "2025-07-09T12:00:00Z",
+      "fecha_vencimiento": "2025-07-27T17:00:00Z"
+    },
+    {
+      "id": "T5_U9",
+      "titulo": "Preparar Informes",
+      "descripcion": "Compilar datos para informes de gestión.",
+      "prioridad": "Media",
+      "completada": true,
+      "categoria_id": "C4",
+      "proyecto_id": "P1_U9",
+      "usuario_id": "U9",
+      "fecha_creacion": "2025-07-10T13:00:00Z",
+      "fecha_vencimiento": "2025-07-20T17:00:00Z"
+    },
+    {
+      "id": "T1_U10",
+      "titulo": "Análisis de Tendencias",
+      "descripcion": "Investigar nuevas tecnologías y mercados.",
+      "prioridad": "Alta",
+      "completada": false,
+      "categoria_id": "C1",
+      "proyecto_id": "P1_U10",
+      "usuario_id": "U10",
+      "fecha_creacion": "2025-07-11T09:00:00Z",
+      "fecha_vencimiento": "2025-07-29T17:00:00Z"
+    },
+    {
+      "id": "T2_U10",
+      "titulo": "Prototipo de Concepto",
+      "descripcion": "Desarrollar una prueba de concepto para nueva función.",
+      "prioridad": "Media",
+      "completada": false,
+      "categoria_id": "C1",
+      "proyecto_id": "P1_U10",
+      "usuario_id": "U10",
+      "fecha_creacion": "2025-07-12T10:00:00Z",
+      "fecha_vencimiento": "2025-07-31T17:00:00Z"
+    },
+    {
+      "id": "T3_U10",
+      "titulo": "Revisión de Código",
+      "descripcion": "Realizar code review para el último sprint.",
+      "prioridad": "Baja",
+      "completada": false,
+      "categoria_id": "C1",
+      "proyecto_id": "P2_U10",
+      "usuario_id": "U10",
+      "fecha_creacion": "2025-07-13T11:00:00Z",
+      "fecha_vencimiento": "2025-08-08T17:00:00Z"
+    },
+    {
+      "id": "T4_U10",
+      "titulo": "Diseño de Arquitectura",
+      "descripcion": "Planificar la estructura de un nuevo microservicio.",
+      "prioridad": "Alta",
+      "completada": false,
+      "categoria_id": "C1",
+      "proyecto_id": "P2_U10",
+      "usuario_id": "U10",
+      "fecha_creacion": "2025-07-14T12:00:00Z",
+      "fecha_vencimiento": "2025-07-30T17:00:00Z"
+    },
+    {
+      "id": "T5_U10",
+      "titulo": "Investigación de librerías",
+      "descripcion": "Explorar nuevas librerías y frameworks.",
+      "prioridad": "Media",
+      "completada": true,
+      "categoria_id": "C1",
+      "proyecto_id": "P1_U10",
+      "usuario_id": "U10",
+      "fecha_creacion": "2025-07-15T13:00:00Z",
+      "fecha_vencimiento": "2025-07-22T17:00:00Z"
+    },
+    {
+      "id": "T1",
+      "titulo": "dsds",
+      "descripcion": "ds",
+      "prioridad": "Alta",
+      "categoria_id": "C2",
+      "proyecto_id": null,
+      "usuario_id": "U11",
+      "fecha_creacion": "2025-07-20",
+      "fecha_vencimiento": "2323-03-21",
+      "completada": true
+    },
+    {
+      "id": "T2",
+      "titulo": "ds",
+      "descripcion": "dsds",
+      "prioridad": "Media",
+      "categoria_id": "C1",
+      "proyecto_id": null,
+      "usuario_id": "U11",
+      "fecha_creacion": "2025-07-20",
+      "fecha_vencimiento": "",
+      "completada": true
+    }
+  ],
+  "comentarios": [
+    {
+      "id": "CM1",
+      "contenido": "Recordatorio: La reunión de equipo de los lunes ahora será a las 10 AM.",
+      "usuario_id": "U1",
+      "fecha_creacion": "2025-07-18T09:00:00Z"
+    },
+    {
+      "id": "CM2",
+      "contenido": "No olviden registrar sus horas antes de que termine la semana.",
+      "usuario_id": "U2",
+      "fecha_creacion": "2025-07-19T11:30:00Z"
+    },
+    {
+      "id": "CM3",
+      "contenido": "Excelente progreso en el diseño del dashboard.",
+      "usuario_id": "U1",
+      "fecha_creacion": "2025-07-20T10:00:00Z"
+    },
+    {
+      "id": "CM4",
+      "contenido": "Pendiente la revisión del reporte financiero.",
+      "usuario_id": "U5",
+      "fecha_creacion": "2025-07-21T11:00:00Z"
+    },
+    {
+      "id": "CM5",
+      "contenido": "Las entrevistas de personal van muy bien.",
+      "usuario_id": "U6",
+      "fecha_creacion": "2025-07-22T12:00:00Z"
+    },
+    {
+      "id": "CM6",
+      "contenido": "Necesitamos más feedback para el prototipo.",
+      "usuario_id": "U4",
+      "fecha_creacion": "2025-07-23T13:00:00Z"
+    },
+    {
+      "id": "CM7",
+      "contenido": "El plan de marketing está listo para revisión.",
+      "usuario_id": "U2",
+      "fecha_creacion": "2025-07-24T14:00:00Z"
+    },
+    {
+      "id": "CM8",
+      "contenido": "No hay problemas detectados en el monitoreo.",
+      "usuario_id": "U7",
+      "fecha_creacion": "2025-07-25T15:00:00Z"
+    },
+    {
+      "id": "CM9",
+      "contenido": "Pendiente la logística del próximo evento.",
+      "usuario_id": "U9",
+      "fecha_creacion": "2025-07-26T16:00:00Z"
+    },
+    {
+      "id": "CM10",
+      "contenido": "Buena investigación de las nuevas librerías.",
+      "usuario_id": "U10",
+      "fecha_creacion": "2025-07-27T17:00:00Z"
+    },
+    {
+      "id": "CM1752973883280",
+      "contenido": "No olviden registrar sus horas antes de que termine la semana.\n\n",
+      "usuario_id": "U1",
+      "fecha_creacion": "2025-07-20T01:11:23.280Z"
+    }
+  ],
+  "actualizaciones_sistema": [
+    {
+      "id": "ACT001",
+      "titulo": "¡GestorPro v2.0 Lanzado!",
+      "contenido": "Descubre la nueva interfaz de usuario, reportes personalizables y colaboración en tiempo real. Estamos emocionados por esta gran actualización que mejorará tu productividad.",
+      "fecha_publicacion": "2025-07-01T09:00:00Z",
+      "version": "v2.0.0",
+      "enlace_mas_info": "/blog/v2-release"
+    },
+    {
+      "id": "ACT002",
+      "titulo": "Mejoras de Rendimiento",
+      "contenido": "Hemos optimizado la velocidad de carga de tareas y proyectos para una experiencia más fluida y rápida en todos los módulos.",
+      "fecha_publicacion": "2025-07-05T14:30:00Z",
+      "version": "v2.0.1"
+    },
+    {
+      "id": "ACT003",
+      "titulo": "Recordatorio: Mantenimiento Planificado",
+      "contenido": "El sistema estará en mantenimiento el 28 de Julio de 2025 de 2:00 AM a 4:00 AM (GMT-5). Por favor, guarda tus cambios antes de esa hora.",
+      "fecha_publicacion": "2025-07-10T10:00:00Z",
+      "enlace_mas_info": "/soporte/mantenimiento"
+    },
+    {
+      "id": "ACT004",
+      "titulo": "Nuevas Integraciones",
+      "contenido": "Ahora puedes conectar tu GestorPro con Google Drive y Slack para una gestión de documentos y comunicación más eficiente.",
+      "fecha_publicacion": "2025-07-15T11:00:00Z",
+      "version": "v2.1.0",
+      "enlace_mas_info": "/integraciones"
+    },
+    {
+      "id": "ACT005",
+      "titulo": "Tutoriales Interactivos",
+      "contenido": "Hemos añadido una serie de tutoriales paso a paso para ayudarte a dominar las nuevas funciones de GestorPro.",
+      "fecha_publicacion": "2025-07-20T09:00:00Z",
+      "version": "v2.1.1",
+      "enlace_mas_info": "/ayuda/tutoriales"
+    },
+    {
+      "id": "ACT006",
+      "titulo": "Soporte 24/7 Disponible",
+      "contenido": "Nuestro equipo de soporte ahora está disponible las 24 horas del día, los 7 días de la semana para resolver cualquier duda.",
+      "fecha_publicacion": "2025-07-20T15:00:00Z",
+      "version": "v2.1.2",
+      "enlace_mas_info": "/soporte/contacto"
+    }
+  ]
+}

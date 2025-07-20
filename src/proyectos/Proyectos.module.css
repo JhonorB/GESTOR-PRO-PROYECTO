@@ -1,0 +1,1177 @@
+
+.proyectosPageContainer {
+    padding: 30px;
+    background-color: var(--app-bg-color);
+    color: var(--text-color-primary);
+    min-height: calc(100vh - var(--topbar-height, 60px) - 40px);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px var(--shadow-dark);
+    margin: 20px auto;
+    max-width: 1200px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pageTitle {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 0.05em;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.formContainer {
+    background-color: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 15px;
+    margin-bottom: 2.5rem;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.formContainer h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+    color: var(--text-color-primary);
+    font-size: 1.05rem;
+}
+
+.formInput, 
+.formTextarea,
+.formSelect {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    background-color: var(--input-bg);
+    color: var(--text-color-primary);
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.formInput::placeholder, .formTextarea::placeholder {
+    color: var(--placeholder-color);
+}
+
+.formInput:focus, 
+.formTextarea:focus,
+.formSelect:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(97, 218, 251, 0.3);
+}
+
+.formTextarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.formSelect {
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23b3b3b3%22%20d%3D%22M287%2069.9a14.1%2014.1%200%2000-20%200L146.2%20190.2%2025.4%2069.9a14.1%2014.1%200%2000-20%200%2014.1%2014.1%200%20000%2020L136.2%20220.5a14.1%2014.1%200%200020%200L287%2089.9a14.1%2014.1%200%20000-20%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    padding-right: 30px;
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    .formRow {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.formButton {
+    background-color: var(--primary-color);
+    color: var(--text-dark);
+    border: none;
+    padding: 0.9rem 2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.formButton:hover {
+    background-color: var(--primary-dark-color);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.formButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.listaContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.proyectoCard {
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.proyectoCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px var(--shadow-dark);
+    border-color: var(--primary-color);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.cardHeader h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text-color-primary);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.proyectoCard p {
+    color: var(--text-color-secondary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+}
+
+.estadoBadge {
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+    margin-left: 1rem;
+}
+
+.Planificado { background-color: #a855f7; }
+.EnProgreso { background-color: #3b82f6; }
+.Completado { background-color: var(--success-color); }
+.EnPausa { background-color: var(--warning-color); }
+
+.cardFechas {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+    color: var(--text-color-secondary);
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed var(--border-color);
+    margin-bottom: 1.5rem;
+}
+
+.cardFechas span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cardFechas svg {
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.cardFooter {
+    border-top: none;
+    padding-top: 0;
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.acciones {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.accionBtn {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--text-color-secondary);
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.accionBtn:hover {
+    background-color: rgba(97, 218, 251, 0.1);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btnEliminar {
+    border-color: var(--danger-color);
+    color: var(--danger-color);
+}
+
+.btnEliminar:hover {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: var(--danger-color);
+    border-color: var(--danger-color);
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modalContent {
+    background-color: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 550px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    animation: slideIn 0.3s ease-out;
+    border: 1px solid var(--border-color);
+    color: var(--text-color-primary);
+}
+
+.modalContent h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.modalContent .formGroup {
+    margin-bottom: 1.2rem;
+}
+
+.modalContent .formGroup label {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+    color: var(--text-color-primary);
+    font-size: 1.05rem;
+}
+
+.modalContent .formInput,
+.modalContent .formTextarea,
+.modalContent .formSelect {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    background-color: var(--input-bg);
+    color: var(--text-color-primary);
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.modalContent .formInput:focus,
+.modalContent .formTextarea:focus,
+.modalContent .formSelect:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(97, 218, 251, 0.3);
+}
+
+.modalContent .formTextarea {
+    min-height: 100px;
+}
+
+.modalContent .formSelect {
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23b3b3b3%22%20d%3D%22M287%2069.9a14.1%2014.1%200%2000-20%200L146.2%20190.2%2025.4%2069.9a14.1%2014.1%200%2000-20%200%2014.1%2014.1%200%20000%2020L136.2%20220.5a14.1%2014.1%200%200020%200L287%2089.9a14.1%2014.1%200%20000-20%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    padding-right: 30px;
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    .formRow {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.modalActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btnPrimary, .btnSecondary {
+    padding: 0.9rem 1.8rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btnPrimary {
+    background-color: var(--primary-button-bg);
+    color: var(--text-dark);
+}
+
+.btnPrimary:hover {
+    background-color: var(--primary-dark-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btnSecondary {
+    background-color: var(--secondary-button-bg);
+    color: var(--secondary-button-text);
+}
+
+.btnSecondary:hover {
+    background-color: var(--border-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .proyectosPageContainer {
+        padding: 20px;
+        margin: 10px auto;
+    }
+    .pageTitle {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    .formContainer {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .formContainer h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .formInput, .formTextarea, .formSelect {
+        padding: 0.8rem;
+    }
+    .formButton {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+    .listaContainer {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    .proyectoCard {
+        padding: 1.5rem;
+    }
+    .cardHeader h3 {
+        font-size: 1.4rem;
+    }
+    .estadoBadge {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.7rem;
+    }
+    .proyectoCard p {
+        font-size: 0.9rem;
+    }
+    .cardFechas {
+        font-size: 0.8rem;
+        padding-bottom: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    .acciones {
+        gap: 0.6rem;
+    }
+    .accionBtn {
+        width: 35px;
+        height: 35px;
+    }
+    .modalContent {
+        padding: 1.5rem;
+        max-width: 95%;
+    }
+    .modalContent h2 {
+        font-size: 1.75rem;
+    }
+    .modalActions {
+        margin-top: 1.5rem;
+        gap: 0.8rem;
+    }
+    .btnPrimary, .btnSecondary {
+        padding: 0.7rem 1.4rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .pageTitle {
+        font-size: 1.8rem;
+    }
+    .formContainer h3 {
+        font-size: 1.3rem;
+    }
+    .cardHeader h3 {
+        font-size: 1.2rem;
+    }
+    .modalContent h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* src/proyectos/Proyectos.module.css */
+
+/* Contenedor principal de la página Mis Proyectos */
+.proyectosPageContainer {
+    padding: 30px;
+    background-color: var(--app-bg-color); /* Fondo principal de la app (se adapta al tema) */
+    color: var(--text-color-primary); /* Color de texto primario (se adapta al tema) */
+    min-height: calc(100vh - var(--topbar-height, 60px) - 40px); /* Ajusta altura */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px var(--shadow-dark); /* Sombra adaptable al tema */
+    margin: 20px auto; /* Centrar la página */
+    max-width: 1200px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Título h1 "Mis Proyectos" */
+.pageTitle {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary-color); /* Color primario adaptable al tema (ej. azul suave en oscuro) */
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 0.05em;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Mensajes de carga y error */
+.loadingMessage, .errorMessage {
+    text-align: center;
+    color: var(--text-color-secondary); /* Texto secundario adaptable al tema */
+    font-size: 1.1rem;
+    padding: 20px;
+    background-color: var(--card-bg); /* Fondo de tarjeta adaptable al tema */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--shadow-light); /* Sombra ligera */
+    margin-top: 20px;
+}
+
+.errorMessage {
+    color: var(--danger-color); /* Color rojo para errores */
+    background-color: rgba(220, 53, 69, 0.1);
+    border: 1px solid var(--danger-color);
+}
+
+/* Divisor horizontal <hr> */
+.divider {
+    border: none;
+    border-top: 1px solid var(--border-color); /* Borde divisor adaptable al tema */
+    margin: 2.5rem 0; /* Margen ajustado */
+}
+
+/* --- Estilos del Formulario (FormProyectos.tsx) --- */
+.formContainer {
+    background-color: var(--card-bg); /* Fondo de tarjeta adaptable al tema */
+    padding: 2.5rem;
+    border-radius: 15px;
+    margin-bottom: 2.5rem;
+    box-shadow: var(--card-shadow); /* Sombra de tarjeta adaptable */
+    border: 1px solid var(--border-color); /* Borde sutil adaptable */
+    transition: all 0.3s ease;
+}
+
+.formContainer h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color); /* Título del formulario con color primario adaptable */
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+    color: var(--text-color-primary); /* Texto de label adaptable al tema */
+    font-size: 1.05rem;
+}
+
+.formInput, 
+.formTextarea,
+.formSelect {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid var(--input-border); /* Borde de input adaptable */
+    border-radius: 8px;
+    background-color: var(--input-bg); /* Fondo de input adaptable */
+    color: var(--text-color-primary); /* Texto de input adaptable */
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.formInput::placeholder, .formTextarea::placeholder {
+    color: var(--placeholder-color); /* Placeholder adaptable */
+}
+
+.formInput:focus, 
+.formTextarea:focus,
+.formSelect:focus {
+    outline: none;
+    border-color: var(--primary-color); /* Borde de enfoque con color primario */
+    box-shadow: 0 0 0 3px rgba(var(--primary-color-rgb-alpha, 97, 218, 251, 0.3)); /* Sombra de enfoque */
+}
+/* Nota: Si primario no está como --primary-color-rgb-alpha, se mantiene rgba(97, 218, 251, 0.3) */
+
+
+.formTextarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.formSelect {
+    appearance: none;
+    /* Flecha SVG con color adaptable si se desea: fill%3D%22${encodeURIComponent(var(--text-color-primary))}%22 */
+    /* Para simplificar, mantendremos el #b3b3b3 que es un gris genérico */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23b3b3b3%22%20d%3D%22M287%2069.9a14.1%2014.1%200%2000-20%200L146.2%20190.2%2025.4%2069.9a14.1%2014.1%200%2000-20%200%2014.1%2014.1%200%20000%2020L136.2%20220.5a14.1%2014.1%200%200020%200L287%2089.9a14.1%2014.1%200%20000-20%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    padding-right: 30px;
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    .formRow {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.formButton {
+    background-color: var(--primary-color);
+    color: var(--text-dark); /* Color fijo para contraste con el primary-color */
+    border: none;
+    padding: 0.9rem 2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.formButton:hover {
+    background-color: var(--primary-dark-color);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.formButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+
+/* --- Estilos de la Lista de Proyectos (ListaProyectos.tsx) --- */
+.listaContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.proyectoCard {
+    background-color: var(--card-bg); /* Fondo de tarjeta adaptable al tema */
+    border-radius: 15px;
+    box-shadow: var(--card-shadow); /* Sombra adaptable al tema */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color); /* Borde adaptable al tema */
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.proyectoCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px var(--shadow-dark); /* Sombra más fuerte al hover */
+    border-color: var(--primary-color); /* Borde cambia a color primario al hover */
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid var(--border-color); /* Borde adaptable al tema */
+}
+
+.cardHeader h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text-color-primary); /* Texto de título adaptable al tema */
+    margin: 0;
+    line-height: 1.3;
+}
+
+.proyectoCard p {
+    color: var(--text-color-secondary); /* Texto de descripción adaptable al tema */
+    line-height: 1.6;
+    font-size: 0.95rem;
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+}
+
+.estadoBadge {
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    color: white; /* Texto del badge blanco fijo para contraste */
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    flex-shrink: 0;
+    margin-left: 1rem;
+}
+
+/* Colores de Badges (estos colores son fijos, no cambian con el tema, para mantener su significado visual) */
+.Planificado { background-color: #a855f7; } /* Púrpura */
+.EnProgreso { background-color: #3b82f6; } /* Azul */
+.Completado { background-color: var(--success-color); } /* Verde */
+.EnPausa { background-color: var(--warning-color); } /* Naranja */
+
+
+.cardFechas {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+    color: var(--text-color-secondary); /* Texto de fechas adaptable al tema */
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed var(--border-color); /* Borde adaptable al tema */
+    margin-bottom: 1.5rem;
+}
+
+.cardFechas span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cardFechas svg {
+    color: var(--primary-color); /* Iconos de fecha usan el color primario adaptable */
+    flex-shrink: 0;
+}
+
+.cardFooter {
+    border-top: none;
+    padding-top: 0;
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.acciones {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.accionBtn {
+    background: var(--card-bg); /* Fondo de botón adaptable al tema */
+    border: 1px solid var(--border-color); /* Borde adaptable al tema */
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--text-color-secondary); /* Color de icono adaptable al tema */
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera fija */
+}
+
+.accionBtn:hover {
+    background-color: rgba(var(--primary-color-rgb-alpha-hover, 97, 218, 251, 0.1)); /* Fondo de hover usando la variable de color primario */
+    color: var(--primary-color); /* Color primario al hover */
+    border-color: var(--primary-color); /* Borde primario al hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btnEliminar {
+    border-color: var(--danger-color); /* Borde rojo fijo */
+    color: var(--danger-color); /* Icono rojo fijo */
+}
+
+.btnEliminar:hover {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: var(--danger-color);
+    border-color: var(--danger-color);
+}
+
+
+/* --- Estilos del Modal de Edición (EditProjectModal.tsx) --- */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modalContent {
+    background-color: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 550px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    animation: slideIn 0.3s ease-out;
+    border: 1px solid var(--border-color);
+    color: var(--text-color-primary);
+}
+
+.modalContent h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.modalContent .formGroup {
+    margin-bottom: 1.2rem;
+}
+
+.modalContent .formGroup label {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+    color: var(--text-color-primary);
+    font-size: 1.05rem;
+}
+
+.modalContent .formInput,
+.modalContent .formTextarea,
+.modalContent .formSelect {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    background-color: var(--input-bg);
+    color: var(--text-color-primary);
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.modalContent .formInput:focus,
+.modalContent .formTextarea:focus,
+.modalContent .formSelect:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(97, 218, 251, 0.3);
+}
+
+.modalContent .formTextarea {
+    min-height: 100px;
+}
+
+.modalContent .formSelect {
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23b3b3b3%22%20d%3D%22M287%2069.9a14.1%2014.1%200%2000-20%200L146.2%20190.2%2025.4%2069.9a14.1%2014.1%200%2000-20%200%2014.1%2014.1%200%20000%2020L136.2%20220.5a14.1%2014.1%200%200020%200L287%2089.9a14.1%2014.1%200%20000-20%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    padding-right: 30px;
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    .formRow {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.modalActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btnPrimary, .btnSecondary {
+    padding: 0.9rem 1.8rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btnPrimary {
+    background-color: var(--primary-button-bg);
+    color: var(--text-dark);
+}
+
+.btnPrimary:hover {
+    background-color: var(--primary-dark-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btnSecondary {
+    background-color: var(--secondary-button-bg);
+    color: var(--secondary-button-text);
+}
+
+.btnSecondary:hover {
+    background-color: var(--border-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .proyectosPageContainer {
+        padding: 20px;
+        margin: 10px auto;
+    }
+    .pageTitle {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    .formContainer {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .formContainer h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .formInput, .formTextarea, .formSelect {
+        padding: 0.8rem;
+    }
+    .formButton {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+    .listaContainer {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    .proyectoCard {
+        padding: 1.5rem;
+    }
+    .cardHeader h3 {
+        font-size: 1.4rem;
+    }
+    .estadoBadge {
+        font-size: 0.8rem;
+        padding: 0.2rem 0.7rem;
+    }
+    .proyectoCard p {
+        font-size: 0.9rem;
+    }
+    .cardFechas {
+        font-size: 0.8rem;
+        padding-bottom: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    .acciones {
+        gap: 0.6rem;
+    }
+    .accionBtn {
+        width: 35px;
+        height: 35px;
+    }
+    .modalContent {
+        padding: 1.5rem;
+        max-width: 95%;
+    }
+    .modalContent h2 {
+        font-size: 1.75rem;
+    }
+    .modalActions {
+        margin-top: 1.5rem;
+        gap: 0.8rem;
+    }
+    .btnPrimary, .btnSecondary {
+        padding: 0.7rem 1.4rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .pageTitle {
+        font-size: 1.8rem;
+    }
+    .formContainer h3 {
+        font-size: 1.3rem;
+    }
+    .cardHeader h3 {
+        font-size: 1.2rem;
+    }
+    .modalContent h2 {
+        font-size: 1.5rem;
+    }
+} 
+
+/* src/proyectos/Proyectos.module.css */
+
+/* ... (Todo tu CSS existente) ... */
+
+/* --- Estilos para la sección de Exportar --- */
+.exportSection {
+    margin-bottom: 1.5rem; /* Espacio entre el botón de exportar y el formulario */
+    text-align: right; /* Alinea el botón a la derecha */
+}
+
+.exportButton {
+    background-color: var(--secondary-color); /* Usamos el color secundario para el botón de exportar */
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex; /* Para alinear el ícono y el texto */
+    align-items: center;
+    gap: 8px; /* Espacio entre ícono y texto */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.exportButton:hover {
+    background-color: #8c3690; /* Un tono más oscuro del secundario al hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.exportButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Media Queries para Responsividad (ajusta si es necesario) */
+@media (max-width: 768px) {
+    .exportSection {
+        text-align: center; /* Centrar botón en móvil */
+        margin-bottom: 1rem;
+    }
+    .exportButton {
+        width: 100%; /* Botón de ancho completo en móvil */
+        justify-content: center;
+    }
+}
+/* src/proyectos/Proyectos.module.css */
+
+/* ... (Todo tu CSS existente hasta .exportSection) ... */
+
+/* --- SECCIÓN DE BOTONES DE EXPORTACIÓN --- */
+.exportSection {
+    margin-bottom: 1.5rem;
+    text-align: right; /* Alinea los botones a la derecha */
+    display: flex; /* Usamos flexbox para los botones */
+    justify-content: flex-end; /* Alinea al final (derecha) */
+    gap: 10px; /* Espacio entre los botones */
+    flex-wrap: wrap; /* Permite que los botones se envuelvan en pantallas pequeñas */
+}
+
+.exportButton {
+    background-color: var(--secondary-color); /* Color secundario (púrpura o gris) */
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.exportButton:hover {
+    background-color: #8c3690; /* Tono más oscuro del secundario */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.exportButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Colores específicos para cada botón de exportación */
+.exportButtonCsv {
+    background-color: #28a745; /* Verde para CSV (común en Excel) */
+}
+.exportButtonCsv:hover {
+    background-color: #218838;
+}
+
+.exportButtonPdf {
+    background-color: #dc3545; /* Rojo para PDF */
+}
+.exportButtonPdf:hover {
+    background-color: #c82333;
+}
+
+.exportButtonXlsx {
+    background-color: #007bff; /* Azul para XLSX */
+}
+.exportButtonXlsx:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .exportSection {
+        justify-content: center; /* Centrar botones en móvil */
+        margin-bottom: 1rem;
+        gap: 8px; /* Reducir gap en móvil */
+    }
+    .exportButton {
+        width: auto; /* Ancho automático, no 100% para que se envuelvan */
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .exportSection {
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+    .exportButton {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
