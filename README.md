@@ -69,3 +69,11 @@ Inicia la aplicación de React en modo de desarrollo:
 
 ```bash
 npm run dev
+```
+### 💻 Iniciar el backend
+
+```bash
+npm run server
+```
+
+
