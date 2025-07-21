@@ -19,19 +19,16 @@ Asegúrate de tener instalado lo siguiente:
 
 Una vez que clones el repositorio y navegues al directorio del proyecto, ejecuta los siguientes comandos para instalar todas las dependencias necesarias:
 
-1.  **Clona el repositorio:**
-    ```bash
-    git clone [https://github.com/JhonorB/GESTOR-PRO-PROYECTO.git](https://github.com/JhonorB/GESTOR-PRO-PROYECTO.git)
-    ```
-2.  **Navega al directorio del proyecto:**
+  
+1.  **Navega al directorio del proyecto:**
     ```bash
     cd GESTOR-PRO-PROYECTO
     ```
-3.  **Instala las dependencias principales del proyecto:**
+2.  **Instala las dependencias principales del proyecto:**
     ```bash
     npm install
     ```
-4.  **Instala librerías adicionales:**
+3.  **Instala librerías adicionales:**
     ```bash
     npm install react-router-dom axios lucide-react bootstrap aos hexagons react-bootstrap
     ```
@@ -42,15 +39,15 @@ Una vez que clones el repositorio y navegues al directorio del proyecto, ejecuta
     * `aos`: Librería para animaciones al desplazar (Animate On Scroll).
     * `hexagons`: (Si tiene un uso específico, puedes añadir una breve descripción aquí).
 
-5.  **Instala dependencias para la generación y exportación de archivos (PDF/Excel):**
+4.  **Instala dependencias para la generación y exportación de archivos (PDF/Excel):**
     ```bash
     npm install jspdf jspdf-autotable xlsx file-saver
     ```
-6.  **Instala `json-server` globalmente** (necesario para el servidor de desarrollo del API):
+5.  **Instala `json-server` globalmente** (necesario para el servidor de desarrollo del API):
     ```bash
     npm install -g json-server
     ```
-7.  **Instala tipos para TypeScript (dependencias de desarrollo):**
+6.  **Instala tipos para TypeScript (dependencias de desarrollo):**
     ```bash
     npm install --save-dev @types/aos @types/jspdf-autotable
     ```
