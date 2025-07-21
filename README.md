@@ -1,90 +1,71 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-=======
 # GESTOR-PRO-PROYECTO
 
-Este proyecto fue iniciado con React, TypeScript y Vite.
+Este proyecto es una aplicación de gestión desarrollada con **React**, **TypeScript** y **Vite**. Ofrece una interfaz de usuario intuitiva para [Añade aquí una breve descripción del propósito principal de tu proyecto, por ejemplo: "gestionar proyectos, tareas y usuarios, con funcionalidades de exportación de datos a PDF y Excel."].
 
-Este template proporciona una configuración mínima para que React funcione en Vite con HMR y algunas reglas de ESLint.
+---
 
-Actualmente, hay dos plugins oficiales disponibles:
+## 🚀 Inicio Rápido
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) usa [Babel](https://babeljs.io/) para Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) usa [SWC](https://swc.rs/) para Fast Refresh
+Sigue estos pasos para poner en marcha el proyecto en tu máquina local.
 
-## Expandiendo la configuración de ESLint
+### 📋 Prerrequisitos
 
-Si estás desarrollando una aplicación de producción, recomendamos actualizar la configuración para habilitar las reglas de linting conscientes del tipo:
+Asegúrate de tener instalado lo siguiente:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
->>>>>>> ccb1cd40683ec3ecccad68c90450ce9f59820327
+* **Node.js y npm**: Puedes descargarlos desde [nodejs.org](https://nodejs.org/).
+* **Git**: Para clonar el repositorio, descárgalo desde [git-scm.com](https://git-scm.com/).
+
+### 💻 Instalación de Dependencias Necesarias
+
+Una vez que clones el repositorio y navegues al directorio del proyecto, ejecuta los siguientes comandos para instalar todas las dependencias necesarias:
+
+1.  **Clona el repositorio:**
+    ```bash
+    git clone [https://github.com/JhonorB/GESTOR-PRO-PROYECTO.git](https://github.com/JhonorB/GESTOR-PRO-PROYECTO.git)
+    ```
+2.  **Navega al directorio del proyecto:**
+    ```bash
+    cd GESTOR-PRO-PROYECTO
+    ```
+3.  **Instala las dependencias principales del proyecto:**
+    ```bash
+    npm install
+    ```
+4.  **Instala librerías adicionales:**
+    ```bash
+    npm install react-router-dom axios lucide-react bootstrap aos hexagons react-bootstrap
+    ```
+    * `react-router-dom`: Para la navegación dentro de la aplicación.
+    * `axios`: Cliente HTTP para realizar peticiones a la API.
+    * `lucide-react`: Colección de iconos para la interfaz de usuario.
+    * `bootstrap` y `react-bootstrap`: Frameworks para componentes de UI y estilos responsivos.
+    * `aos`: Librería para animaciones al desplazar (Animate On Scroll).
+    * `hexagons`: (Si tiene un uso específico, puedes añadir una breve descripción aquí).
+
+5.  **Instala dependencias para la generación y exportación de archivos (PDF/Excel):**
+    ```bash
+    npm install jspdf jspdf-autotable xlsx file-saver
+    ```
+6.  **Instala `json-server` globalmente** (necesario para el servidor de desarrollo del API):
+    ```bash
+    npm install -g json-server
+    ```
+7.  **Instala tipos para TypeScript (dependencias de desarrollo):**
+    ```bash
+    npm install --save-dev @types/aos @types/jspdf-autotable
+    ```
+
+**Nota sobre Yarn:** Has mencionado `yarn add jspdf jspdf-autotable xlsx file-saver`. Si prefieres usar `yarn` en lugar de `npm`, puedes ejecutar los comandos de `yarn` equivalentes para instalar las dependencias.
+
+---
+
+## ▶️ Cómo Correr la Aplicación
+
+Para que la aplicación funcione completamente, necesitas iniciar tanto el **frontend**, como el **servidor de datos** y el **servidor de subida de archivos**.
+
+### 💻 Iniciar el Frontend
+
+Inicia la aplicación de React en modo de desarrollo:
+
+```bash
+npm run dev
